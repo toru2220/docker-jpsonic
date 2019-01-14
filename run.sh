@@ -2,10 +2,6 @@
 
 set -e
 
-mkdir -p $JPSONIC_DIR/data/transcode
-ln -fs /usr/bin/ffmpeg $JPSONIC_DIR/data/transcode/ffmpeg
-ln -fs /usr/bin/lame $JPSONIC_DIR/data/transcode/lame
-
 if [[ $# -lt 1 ]] || [[ ! "$1" == "java"* ]]; then
 
     java_opts_array=()
